@@ -2,11 +2,11 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+ 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,s
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -16,60 +16,118 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* border: 1px solid black; */
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    display: block;
 }
 
+/*______________________________________________Header CSS______________________________________________*/
+
+header {
+    width: 100%;
+    background: white;
+}
+
+/* ---------- Section 1 ---------- */
+.HeaderStrip {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px 10px 5px 5px;
+}
+
+    .HeaderStrip img {
+        width: 15%;
+        padding-left: 2%;
+    }
+
+    .HeaderStrip nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.3rem;
+        margin-top: 1%;
+    }
+    
+        .HeaderStrip nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+/* ---------- Section 2 ---------- */
+.Headerimage {
+    background: url(https://raw.githubusercontent.com/jsalcedo18/Web37-Sprint-Challenge-user-interface-and-git.LambdaColorBoxes/master/img/jumbo.jpg) no-repeat center; 
+    background-size: contain;
+    height: 29.4vh;
+    width: 100%;
+    position: relative;
+    margin: 3% 0% 1.9% 0%;
+}
+
+/*______________________________________________Body CSS______________________________________________*/
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ 
 * {
     box-sizing: border-box;
 }
-
+ 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
+ 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
+ 
 p {
     line-height: 1.4;
+    font-size: 1.3rem;
 }
 
-.container {
-    width: 800px;
+/* ---------- Body Div Container ---------- */
+
+.Bodycontainer {
+    width: 90%;
+    height: auto;
     margin: 0 auto;
 }
+
+/* ---------- Section 1: .top-content ---------- */
 
 .top-content {
     display: flex;
@@ -78,69 +136,124 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
+    
+    .top-content .text-container {
+        width: 48%;
+        padding: 0 1%;
+        padding-bottom: 20px;  
+    }
+ 
+/* ---------- Section 2: .middle-content ---------- */
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+ 
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+    
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
+        .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+            width: 12%;
+            height: 16vh;
+            background: black;
+            margin: 20px 2.5%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+            .box1 {
+                background: teal;
+            }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box2 {
+                background: gold;
+            }
+
+            .box3 {
+                background: cadetblue;
+            }
+
+            .box4 {
+                background: coral;
+            }
+
+            .box5 {
+                background: crimson;
+            }
+
+            .box6 {
+                background: forestgreen;
+            }
+
+            .box7 {
+                background: darkorchid;
+            }
+
+            .box8 {
+                background: hotpink;
+            }
+
+            .box9 {
+                background: indigo;
+            }
+
+            .box10 {
+                background: dodgerblue;
+            }
+
+/* ---------- Section 2: .bottom-content ---------- */
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
+ 
+    .bottom-content .text-container {
+        padding-right: 4%;
+    }
+ 
+        .bottom-content .text-container:last-child {
+            padding-right: 0;
+        }
+ 
+/*______________________________________________Footer CSS______________________________________________*/
 
 footer {
     width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    justify-content: center;
 }
+ 
+    footer nav {
+        background-color: black;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 1.3rem;
+    }
+ 
+        footer nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 70px 0px 70px;
+        }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
+            footer nav a:first-child {
+                padding-left: 0px;
+            }
+
+/*______________________________________________End of CSS______________________________________________*/
