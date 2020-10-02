@@ -50,7 +50,7 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-size: 14px;
+        font-size: 1rem;
         margin-top: 1%;
     }
     
@@ -61,9 +61,12 @@ header {
 
 /* ---------- Section 2 ---------- */
 .Headerimage {
-    margin: 3% 0;
-    display: flex;
-    justify-content: center;
+    background: url(https://raw.githubusercontent.com/jsalcedo18/Web37-Sprint-Challenge-user-interface-and-git.LambdaColorBoxes/master/img/jumbo.jpg) no-repeat center; 
+    background-size: contain;
+    height: 29.4vh;
+    width: 100%;
+    position: relative;
+    margin: 2% 0% 1.5% 0%;
 }
 
 /*______________________________________________Body CSS______________________________________________*/
@@ -151,7 +154,7 @@ p {
         justify-content: space-evenly;
     }
 
-        .middle-content .boxes .box {
+        .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
             width: 12.5%;
             height: 100px;
             background: black;
@@ -164,112 +167,42 @@ p {
 
             .box1 {
                 background: teal;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box2 {
                 background: gold;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box3 {
                 background: cadetblue;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box4 {
                 background: coral;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box5 {
                 background: crimson;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box6 {
                 background: forestgreen;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box7 {
                 background: darkorchid;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box8 {
                 background: hotpink;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box9 {
                 background: indigo;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             .box10 {
                 background: dodgerblue;
-                width: 12.5%;
-                height: 100px;
-                margin: 20px 2.5%;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
 /* ---------- Section 2: .bottom-content ---------- */
