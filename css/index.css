@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-/*______________________________________________Header HTML______________________________________________*/
+/*______________________________________________Header CSS______________________________________________*/
 
 header {
     width: 100%;
@@ -66,7 +66,7 @@ header {
     justify-content: center;
 }
 
-/*______________________________________________Body HTML______________________________________________*/
+/*______________________________________________Body CSS______________________________________________*/
 
 body {
     line-height: 1;
@@ -109,12 +109,16 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
- 
+
+/* ---------- Body Div Container ---------- */
+
 .Bodycontainer {
     width: 800px;
     margin: 0 auto;
 }
- 
+
+/* ---------- Section 1: .top-content ---------- */
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -122,149 +126,153 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+    
+    .top-content .text-container {
+        width: 48%;
+        padding: 0 1%;
+        padding-bottom: 20px;  
+    }
  
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
- 
+/* ---------- Section 2: .middle-content ---------- */
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
  
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
- 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+    
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .middle-content .boxes .box {
+            width: 12.5%;
+            height: 100px;
+            background: black;
+            margin: 20px 2.5%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.box1 {
-    background: teal;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box1 {
+                background: teal;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box2 {
-    background: gold;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box2 {
+                background: gold;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box3 {
-    background: cadetblue;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box3 {
+                background: cadetblue;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box4 {
-    background: coral;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box4 {
+                background: coral;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box5 {
-    background: crimson;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box5 {
+                background: crimson;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box6 {
-    background: forestgreen;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box6 {
+                background: forestgreen;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box7 {
-    background: darkorchid;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box7 {
+                background: darkorchid;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box8 {
-    background: hotpink;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box8 {
+                background: hotpink;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box9 {
-    background: indigo;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box9 {
+                background: indigo;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-.box10 {
-    background: dodgerblue;
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            .box10 {
+                background: dodgerblue;
+                width: 12.5%;
+                height: 100px;
+                margin: 20px 2.5%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+/* ---------- Section 2: .bottom-content ---------- */
 
 .bottom-content {
     display: flex;
@@ -272,29 +280,33 @@ p {
     justify-content: space-around;
 }
  
-.bottom-content .text-container {
-    padding-right: 4%;
-}
+    .bottom-content .text-container {
+        padding-right: 4%;
+    }
  
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
+        .bottom-content .text-container:last-child {
+            padding-right: 0;
+        }
  
+/*______________________________________________Footer CSS______________________________________________*/
+
 footer {
     width: 100%;
     background: black;
 }
  
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
+    footer nav {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 14px;
+    }
  
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
+        footer nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+/*______________________________________________End of CSS______________________________________________*/
