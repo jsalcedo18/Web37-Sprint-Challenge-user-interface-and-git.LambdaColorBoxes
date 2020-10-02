@@ -15,8 +15,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
-    /* border: 0; */
-    border: 1px solid black;
+    border: 0;
+    /* border: 1px solid black; */
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -69,30 +69,34 @@ header {
 
 /* ---------- Section 2 ---------- */
 .Headerimage {
-    background-image:url('https://github.com/jsalcedo18/web-Sprint-Challenge-User-Interface-and-Git/blob/master/img/jumbo-about.png?raw=true');
-    height: 20vh;
+    background: url(https://raw.githubusercontent.com/LambdaSchool/web-Sprint-Challenge-User-Interface-and-Git/master/img/jumbo-about.png) no-repeat center; 
+    background-size: contain;
+    height: 29.4vh;
+    width: 100%;
+    position: relative;
+    margin: 3% 0% 1.9% 0%;
+    /* height: 20vh;
     background-size: cover;
     width: 90%;
     margin-left:5%;
     margin-right:0%;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
 }
 
 /*______________________________________________Body CSS______________________________________________*/
  
 p {
     color: black;
-    /* padding: 5% 0% 5% 0%; */
-    padding-top: 2%;
-    padding-bottom: 3%;
-    font-size: 0.88rem;
-    line-height: 19px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-size: 1.8rem;
+    line-height: 35px;
 }
  
 h3 {
-    font-weight: 525;
-    font-size: 20px;
+    font-weight: 550;
+    font-size: 2.1rem;
     padding-top: 3%;
 }
 
@@ -114,6 +118,14 @@ h3 {
     padding-right: 1%;
  }
 
+    .About h3 {
+        padding-top: 1%;
+    }
+
+    .About p {
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
 /* ---------- Section 2: 4 Boxes ---------- */
 
 .Row1, .Row2 {
@@ -135,16 +147,21 @@ h3 {
         /* margin: 0 10%; */
     }
     
-        .Button {
+        button {
             padding: 2%;
-            color: black;
             background-color: white;
             border:2.5px solid black;
             border-radius: 10px;
-            width: 42%;
+            width: 35%;
             display: flex;
             justify-content: center;
         }
+
+            .Button a {
+                color: black;
+                font-size: 1.4rem;
+                text-decoration: none;
+            }
 
 /* ---------- Section 3: Lets Work Together ---------- */
 
@@ -154,6 +171,10 @@ h3 {
     justify-content: center;   
     margin: 0 7%; 
  }
+
+    .LetsWorkTogether h3 {
+        padding-top: 1%;
+    }
 
 /*______________________________________________Footer CSS______________________________________________*/
 
