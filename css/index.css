@@ -18,7 +18,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
-    border: 0;
+    /* border: 0; */
+    border: 1px solid black;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -28,36 +29,44 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-#Headerimage {
-    margin: 3% 0;
-    display: flex;
-    justify-content: center;
-}
+
+/*______________________________________________Header HTML______________________________________________*/
+
 header {
     width: 100%;
     background: white;
 }
- 
-header nav {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 14px;
-    margin-top: 1%;
-}
- 
-header nav a {
-    color: black;
-    text-decoration: none;
-}
 
-#NavLine {
+/* ---------- Section 1 ---------- */
+.HeaderStrip {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     padding: 20px 10px 5px 5px;
 }
+
+    .HeaderStrip nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+        margin-top: 1%;
+    }
+    
+        .HeaderStrip nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+/* ---------- Section 2 ---------- */
+.Headerimage {
+    margin: 3% 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*______________________________________________Body HTML______________________________________________*/
 
 body {
     line-height: 1;
