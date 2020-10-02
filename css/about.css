@@ -1,8 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
- 
+/*______________________________________________CSS Reset______________________________________________*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +15,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
-    border: 0;
+    /* border: 0; */
+    border: 1px solid black;
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -27,13 +25,50 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
+/*______________________________________________Universal CSS______________________________________________*/
+
 * {
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
- /*///////////////////////////////////////////////////////////////////////////*/
-/* Header */
-#Headerimage {
+
+/*______________________________________________Header CSS______________________________________________*/
+
+header {
+    width: 100%;
+    background: white;
+}
+
+/* ---------- Section 1 ---------- */
+.HeaderStrip {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px 10px 5px 5px;
+}
+
+    .HeaderStrip img {
+        width: 15%;
+        padding-left: 2%;
+    }
+
+    .HeaderStrip nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.3rem;
+        margin-top: 1%;
+    }
+    
+        .HeaderStrip nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+/* ---------- Section 2 ---------- */
+.Headerimage {
     background-image:url('https://github.com/jsalcedo18/web-Sprint-Challenge-User-Interface-and-Git/blob/master/img/jumbo-about.png?raw=true');
     height: 20vh;
     background-size: cover;
@@ -43,36 +78,8 @@ footer, header, hgroup, menu, nav, section {
     display: flex;
     justify-content: center;
 }
-header {
-    width: 100%;
-    background: white;
-}
 
-header nav {
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 14px;
-    margin-top: 4%;
-}
- 
-header nav a {
-    color: black;
-    text-decoration: none;
-}
-#NavLine {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 40px;
-}
-/* Header End */
-
- /*///////////////////////////////////////////////////////////////////////////*/
-
- /* Body Start */
+/*______________________________________________Body CSS______________________________________________*/
  
 p {
     color: black;
@@ -83,7 +90,6 @@ p {
     line-height: 19px;
 }
  
-
 h3 {
     font-weight: 525;
     font-size: 20px;
@@ -95,9 +101,9 @@ h3 {
     margin-top: 3%;
 }
 
-/*///////////////////////////////////////////////////////////////////////////*/
+/* ---------- Section 1: .About ---------- */
 
-#About {
+.About {
     border-bottom: dotted black;
     display: flex;
     flex-direction: column;
@@ -108,17 +114,8 @@ h3 {
     padding-right: 1%;
  }
 
- /*///////////////////////////////////////////////////////////////////////////*/
+/* ---------- Section 2: 4 Boxes ---------- */
 
-#Strategy,#HowWeWork,#PlacesWeWork,#Collaboration {
-    display: flex;
-    flex-direction: column;
-    border-bottom: dotted black;
-    /* width: 40%; */
-    padding: 2% 2%;
-    /* margin: 0 10%; */
-}
- 
 .Row1, .Row2 {
     display:flex;
     margin-left: 5%;
@@ -129,40 +126,61 @@ h3 {
     padding-top: 1%;
 }
 
-.Button {
-    padding: 2%;
-    color: black;
-    background-color: white;
-    border:2.5px solid black;
-    border-radius: 10px;
-    width: 42%;
-    display: flex;
-    justify-content: center;
-}
-/*///////////////////////////////////////////////////////////////////////////*/
-#LetsWorkTogether {
+    .Strategy, .HowWeWork, .PlacesWeWork, .Collaboration {
+        display: flex;
+        flex-direction: column;
+        border-bottom: dotted black;
+        /* width: 40%; */
+        padding: 2% 2%;
+        /* margin: 0 10%; */
+    }
+    
+        .Button {
+            padding: 2%;
+            color: black;
+            background-color: white;
+            border:2.5px solid black;
+            border-radius: 10px;
+            width: 42%;
+            display: flex;
+            justify-content: center;
+        }
+
+/* ---------- Section 3: Lets Work Together ---------- */
+
+.LetsWorkTogether {
     display: flex;
     flex-direction: column;
     justify-content: center;   
     margin: 0 7%; 
  }
-/*///////////////////////////////////////////////////////////////////////////*/
+
+/*______________________________________________Footer CSS______________________________________________*/
+
 footer {
-    width: 90%;
-    margin-left: 5%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    justify-content: center;
 }
+ 
+    footer nav {
+        background-color: black;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 1.3rem;
+    }
+ 
+        footer nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 70px 0px 70px;
+        }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
+            footer nav a:first-child {
+                padding-left: 0px;
+            }
+
+/*______________________________________________End of CSS______________________________________________*/
