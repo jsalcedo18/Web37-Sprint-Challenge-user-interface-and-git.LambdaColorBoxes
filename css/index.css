@@ -18,8 +18,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
-    /* border: 0; */
-    border: 1px solid black;
+    border: 0;
+    /* border: 1px solid black; */
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -45,12 +45,17 @@ header {
     padding: 20px 10px 5px 5px;
 }
 
+    .HeaderStrip img {
+        width: 15%;
+        padding-left: 2%;
+    }
+
     .HeaderStrip nav {
         width: 80%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-top: 1%;
     }
     
@@ -66,7 +71,7 @@ header {
     height: 29.4vh;
     width: 100%;
     position: relative;
-    margin: 2% 0% 1.5% 0%;
+    margin: 3% 0% 1.9% 0%;
 }
 
 /*______________________________________________Body CSS______________________________________________*/
@@ -104,19 +109,21 @@ html, body {
 }
  
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
  
 p {
     line-height: 1.4;
+    font-size: 1.3rem;
 }
 
 /* ---------- Body Div Container ---------- */
 
 .Bodycontainer {
-    width: 800px;
+    width: 90%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -155,8 +162,8 @@ p {
     }
 
         .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
-            width: 12.5%;
-            height: 100px;
+            width: 12%;
+            height: 16vh;
             background: black;
             margin: 20px 2.5%;
             color: white;
@@ -225,21 +232,28 @@ p {
 
 footer {
     width: 100%;
-    background: black;
+    display: flex;
+    justify-content: center;
 }
  
     footer nav {
-        width: 60%;
+        background-color: black;
+        width: 90%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         padding: 20px 2%;
-        font-size: 14px;
+        font-size: 1.3rem;
     }
  
         footer nav a {
             color: white;
             text-decoration: none;
+            padding: 0px 70px 0px 70px;
         }
+
+            footer nav a:first-child {
+                padding-left: 0px;
+            }
 
 /*______________________________________________End of CSS______________________________________________*/
